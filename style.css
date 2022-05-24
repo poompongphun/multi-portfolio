@@ -6,6 +6,7 @@
   --primary: hsl(229, 100%, 69%);
   --normal: hsl(231, 24%, 72%);
   --btnColor: hsl(229, 32%, 17%);
+  --bl: white;
 
   --normalSize: 16px;
   --mdSize: 32px;
@@ -16,6 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Mitr", sans-serif;
+  transition: color 0.3s, background-color 0.3s;
 }
 body {
   background-color: var(--bgColorST);
@@ -35,7 +37,8 @@ body {
 }
 .navbar .brand {
     font-size: calc(var(--normalSize) * 1.2);
-    color: white;
+    color: var(--bl);
+    font-weight: bold;
 }
 .navbar .menu {
     display: flex;
@@ -48,9 +51,18 @@ body {
     gap: 20px;
 }
 .navbar .icon-item .icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: var(--bgColorST);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50%;
+}
+.navbar .icon-item .icon:hover{
+    transform: scale(0.9);
+    opacity: 0.8;
 }
 .introSection {
   width: 100vw;
@@ -136,6 +148,12 @@ body {
 .perform {
     margin: 80px 10%;
 }
+
+.title {
+    font-size: var(--mdSize);
+    color: var(--primary);
+}
+
 @media only screen and (max-width: 1200px) {
   .introImg {
     display: none;
@@ -149,6 +167,7 @@ body {
       border-radius: 50%;
       overflow: hidden;
       margin: 20px auto;
+      margin-top: 90px;
   }
   .mobileImg img {
       width: 100%;
