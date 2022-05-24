@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 100 100">
+
+    <defs>
+    <pattern id="dash" viewBox="0,0,30,30" width="10%" height="10%">
+        <path stroke="hsl(50, 60%, 57%)" fill="#0000" stroke-linecap="round" stroke-linejoin="round"
+        d="m0,3 l10,-6"
+        />
+    </pattern>
+    <pattern id="water" viewBox="0,0,30,30" width="10%" height="15%">
+        <path stroke="white" fill="#0000" stroke-linecap="round" stroke-linejoin="round"
+        d="m0,4 l10,-6"
+        >
+        <animate attributeName="d" values="m0,4 l10,-6;
+                                            m6,4 l10,-6;
+                                            m0,4 l10,-6;" dur="1" repeatCount="indefinite"/>
+        </path>
+    </pattern>
+    </defs>
+
+    <g>
+    <path fill="rgba(0,0,0,0.2)" stroke-width="0" d="m1.5,73.5 l41,22 l9.5,0.1 l-40,-27.5"/>
+
+    <path fill="hsl(30, 36%, 53%)" stroke-width="0" d="m10,68 l0,5.6 l42,22 l0,-5.7"/>
+    <path fill="hsl(42, 60%, 68%)" stroke-width="0" d="m52,90 l0,5.6 l42,-22 l0,-5.7"/>
+    <path fill="hsl(50, 64%, 77%)" stroke-width="0" d="m10,68 l42,22 l42,-22 l-42,-22"/>
+    <path fill="url(#dash)" stroke-width="0" d="m10,68 l42,22 l42,-22 l-42,-22"/>
+
+    <g>
+        <path fill="hsl(30, 36%, 35%)" stroke-width="0" d="m56.4,88.6 l0,3.4 l1.4,0.6 l0,-3.3"/>
+        <path stroke="hsl(20, 30%, 40%)" fill="black" stroke-width="0.8" stroke-linejoin="round" d="m58,89.3 l0,2.88 l2,-1 l0,-2.8 z"/>
+        <path fill="hsl(21, 30%, 55%)" stroke-width="0" d="m56.4,88.6 l2.5,-1.2 l1.4,0.6 l-2.7,1.3"/>
+    </g>
+
+    <g transform="translate(4.8 -2.5)">
+        <path fill="hsl(30, 36%, 35%)" stroke-width="0" d="m56.4,88.6 l0,3.4 l1.4,0.6 l0,-3.3"/>
+        <path stroke="hsl(20, 30%, 40%)" fill="black" stroke-width="0.8" stroke-linejoin="round" d="m58,89.3 l0,2.88 l2,-1 l0,-2.8 z"/>
+        <path fill="hsl(21, 30%, 55%)" stroke-width="0" d="m56.4,88.6 l2.5,-1.2 l1.4,0.6 l-2.7,1.3"/>
+    </g>
+    </g>
+
+    <g>
+    <path fill="hsl(30, 36%, 53%)" stroke-width="0" d="m23.5,68 l25.8,13.2 l0,-42.4 l-13,-12 l-12.7,-1.4"/>
+    <path fill="hsl(42, 60%, 69%)" stroke-width="0" d="m49.2,81 l25.8,-13 l0,-42.7 l-25.7,13.4"/>
+
+    <path fill="hsl(21, 50%, 35%)" stroke-width="0" d="m23.5,25.6 l13,1.3 l25.5,-13.5 l-12.7,-1.4"/>
+    <path fill="hsl(28, 72%, 40%)" stroke-width="0" d="m49.2,38.7 l26,-13 l-13.2,-12.3 l-25.7,13.4"/>
+
+    <g>
+        <path fill="hsl(44, 59%, 75%)" stroke-width="0" d="m53.2,70.5 l5.2,-2.6 l-1,-0.6 l-4,0.5" />
+        <path fill="hsl(25, 30%, 46%)" stroke-width="0" d="m57.2,67.3 l1.2,0.5 l0,-7.2 l-1.4,-0.1" />
+        <path fill="hsl(27, 42%, 14%)" stroke-width="0" d="m53.2,69.5 l4.1,-2.2 l0,-6.8 l-1.4,0 l-2.5,2.5" />
+    </g>
+
+    <g transform="translate(13 -6.9)">
+        <path fill="hsl(44, 59%, 75%)" stroke-width="0" d="m53.2,70.5 l5.2,-2.6 l-1,-0.6 l-4,0.5" />
+        <path fill="hsl(25, 30%, 46%)" stroke-width="0" d="m57.2,67.3 l1.2,0.5 l0,-7.2 l-1.4,-0.1" />
+        <path fill="hsl(27, 42%, 14%)" stroke-width="0" d="m53.2,69.5 l4.1,-2.2 l0,-6.8 l-1.4,0 l-2.5,2.5" />
+    </g>
+
+    <g transform="translate(13 -29.5)">
+        <path fill="hsl(44, 59%, 75%)" stroke-width="0" d="m53.2,70.5 l5.2,-2.6 l-1,-0.6 l-4,0.5" />
+        <path fill="hsl(25, 30%, 46%)" stroke-width="0" d="m57.2,67.3 l1.2,0.5 l0,-7.2 l-1.4,-0.1" />
+        <path fill="hsl(27, 42%, 14%)" stroke-width="0" d="m53.2,69.5 l4.1,-2.2 l0,-6.8 l-1.4,0 l-2.5,2.5" />
+    </g>
+
+    <g transform="translate(0 -22.5)">
+        <path fill="hsl(44, 59%, 75%)" stroke-width="0" d="m53.2,70.5 l5.2,-2.6 l-1,-0.6 l-4,0.5" />
+        <path fill="hsl(25, 30%, 46%)" stroke-width="0" d="m57.2,67.3 l1.2,0.5 l0,-7.2 l-1.4,-0.1" />
+        <path fill="hsl(27, 42%, 14%)" stroke-width="0" d="m53.2,69.5 l4.1,-2.2 l0,-6.8 l-1.4,0 l-2.5,2.5" />
+    </g>
+    </g>
+
+    <g>
+        <rect transform="skewY(27.5) scale(1, -1) translate(0, -100)" x="13.5" y="39.5" width="38.5" height="29" fill="hsla(186, 70%, 63%, 0.7)">
+        <animate attributeName="height" values="0;0;29;29;0;" dur="6" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;" dur="6" repeatCount="indefinite"/>
+    </rect>
+    <rect transform="skewY(-27.5) scale(1, -1) translate(0, -100)" x="52" y="-14.5" width="38.5" height="29" fill="hsla(186, 70%, 68%, 0.7)">
+    <animate attributeName="height" values="0;0;29;29;0;" dur="6" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;" dur="6" repeatCount="indefinite"/>
+    </rect>
+    <path fill="hsla(186, 70%, 73%, 0.7)" opacity="1" d="m13.5,38.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6">
+        <animate attributeName="d" values="m13.5,67.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;
+                                            m13.5,67.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;
+                                            m13.5,38.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;
+                                            m13.5,38.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;
+                                            m13.5,67.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;" dur="6" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;" dur="6" repeatCount="indefinite"/>
+    </path>
+
+    <path fill="url(#water)" opacity="1" d="m13.5,38.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6">
+        <animate attributeName="d" values="m13.5,67.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;
+                                            m13.5,67.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;
+                                            m13.5,38.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;
+                                            m13.5,38.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;
+                                            m13.5,67.6 l38.5,20 l38.5,-20.2 l-15.5,-8 l0,7.5 l-25.6,13 l-25.75,-13 l0,-4.6;" dur="6" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;0;" dur="6" repeatCount="indefinite"/>
+    </path>
+    </g>
+</svg>
