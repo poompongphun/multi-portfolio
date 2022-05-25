@@ -119,6 +119,8 @@ body {
   display: flex;
   align-items: center;
   max-height: 912px;
+  transition: transform 1s;
+  animation: goDown 0.7s ease-in-out;
 }
 .introText {
   color: var(--normal);
@@ -163,6 +165,7 @@ body {
   border-radius: 0 0 0 20px;
   z-index: 0;
   overflow: hidden;
+  animation: rightToLeft 1.4s ease-in-out;
 }
 .introImg .myImg {
   position: absolute;
@@ -296,6 +299,33 @@ body {
   backdrop-filter: blur(5px);
   position: absolute;
   right: 14%;
+}
+
+@keyframes goDown {
+  0% {
+    transform: translateY(-95vh);
+  }
+  90% {
+    transform: translateY(5vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  85% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 1200px) {
