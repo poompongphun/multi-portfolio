@@ -7,6 +7,7 @@
   --normal: hsl(231, 24%, 72%);
   --btnColor: hsl(229, 32%, 17%);
   --bl: white;
+  --navbar: hsla(232, 38%, 11%, 0.5);
 
   --normalSize: 16px;
   --mdSize: 32px;
@@ -23,6 +24,19 @@ body {
   background-color: var(--bgColorST);
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--normal);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
 .navbar {
   height: 86px;
   width: 100%;
@@ -34,6 +48,11 @@ body {
   color: var(--normal);
   z-index: 2;
   font-size: calc(var(--normalSize) * 1.1);
+  background-color: var(--navbar);
+  /* margin: 15px;
+  border-radius: 10px; */
+  backdrop-filter: blur(5px);
+  transition: all 0.3s;
 }
 .navbar .brand {
   font-size: calc(var(--normalSize) * 1.2);
@@ -44,6 +63,19 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+}
+.navbar .menu a{
+  color: var(--normal);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.navbar .menu a:hover{
+  transform: translateY(-3px);
+}
+.navbar .menu .active{
+  border-bottom: 3px solid var(--primary);
+  color: var(--primary);
+  transform: none !important;
 }
 .navbar .icon-item {
   display: flex;
@@ -146,8 +178,9 @@ body {
 
 /* END First Section */
 
-.perform, .growup {
-  margin: 80px 10%;
+.perform,
+.growup {
+  margin: 80px 15%;
 }
 
 .title {
@@ -180,11 +213,29 @@ body {
   height: 100%;
 }
 .ifam {
-    width: 100%;
-    margin: 10px 0;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0em 0.7em 2em #0002;
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0em 0.7em 2em #0002;
+}
+
+.grow-item {
+  display: grid;
+  grid-template-columns: auto 300px;
+  gap: 10px;
+}
+.grow-item img {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0em 0.7em 2em #0002;
+}
+
+.growup .gorwText {
+  font-size: calc(var(--normalSize) * 1.1);
+  color: var(--normal);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -223,6 +274,11 @@ body {
   .perform-item {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .grow-item {
+    display: grid;
+    grid-template-columns: auto;
     gap: 10px;
   }
 }
