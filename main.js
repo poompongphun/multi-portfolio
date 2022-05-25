@@ -46,7 +46,6 @@ function activeBtn(id) {
 function swDark(e) {
   //   this.dataset.dark = !this.dataset.dark;
   const value = e.dataset.dark === "true";
-  console.log(!value);
   e.dataset.dark = `${!value}`;
   if (value) {
     // ขาว
