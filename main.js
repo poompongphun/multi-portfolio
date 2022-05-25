@@ -6,20 +6,19 @@ const navMenu = document.getElementById("navMenu");
 const navA = navMenu.querySelectorAll("a");
 let currentSection = "home";
 
-navA.forEach((a) => {
-  a.onclick = () => {
-    activeBtn(a.href.split("#")[1]);
-  };
-});
+// navA.forEach((a) => {
+//   a.onclick = () => {
+//     activeBtn(a.href.split("#")[1]);
+//   };
+// });
 
 window.onscroll = () => {
   if (document.documentElement.scrollTop == 0) {
     document.getElementsByClassName("navbar")[0].style.height = "86px";
   } else document.getElementsByClassName("navbar")[0].style.height = "56px";
-  let top = doc.scrollTop;
+  let top = doc.scrollTop + 56;
   let bottom = top + doc.offsetHeight;
   let arr = [];
-
   section.forEach((ele) => {
     if (
       (ele.offsetTop < top && top < ele.offsetTop + ele.offsetHeight) ||

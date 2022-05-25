@@ -20,6 +20,9 @@
   font-family: "Mitr", sans-serif;
   transition: color 0.3s, background-color 0.3s;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--bgColorST);
   overflow-x: hidden;
@@ -64,15 +67,15 @@ body {
   justify-content: space-between;
   gap: 40px;
 }
-.navbar .menu a{
+.navbar .menu a {
   color: var(--normal);
   text-decoration: none;
   transition: all 0.3s;
 }
-.navbar .menu a:hover{
+.navbar .menu a:hover {
   transform: translateY(-3px);
 }
-.navbar .menu .active{
+.navbar .menu .active {
   border-bottom: 3px solid var(--primary);
   color: var(--primary);
   transform: none !important;
@@ -132,6 +135,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
 }
 .introText .introBtn:hover {
   background-color: var(--btnColor);
@@ -179,7 +183,8 @@ body {
 /* END First Section */
 
 .perform,
-.growup {
+.growup,
+.aboutme {
   margin: 80px 15%;
 }
 
@@ -238,6 +243,32 @@ body {
   color: var(--normal);
 }
 
+.aboutme .aboutmeText {
+  color: var(--normal);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.aboutme .aboutmeText .stitle {
+  font-size: var(--normalSize);
+  /* position: absolute; */
+  margin-left: 20px;
+  margin-bottom: -12px;
+  color: var(--primary);
+  background-color: var(--bgColorST);
+  width: fit-content;
+  padding: 0 1px;
+  transform: translateZ(0px);
+}
+.aboutme .aboutmeText .value {
+  font-size: calc(var(--normalSize) * 1.1);
+  /* background-color: var(--bgColorND); */
+  border: 2px solid var(--bgColorND);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 1200px) {
   .introImg {
     display: none;
@@ -272,14 +303,13 @@ body {
     font-size: calc(var(--normalSize) * 1);
   }
   .perform-item {
-    display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
   }
   .grow-item {
-    display: grid;
     grid-template-columns: auto;
-    gap: 10px;
+  }
+  .aboutme .aboutmeText {
+    grid-template-columns: auto auto;
   }
 }
 
@@ -301,5 +331,8 @@ body {
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
+  }
+  .aboutme .aboutmeText {
+    grid-template-columns: auto;
   }
 }
