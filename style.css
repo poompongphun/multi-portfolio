@@ -187,7 +187,8 @@ body {
 
 .perform,
 .growup,
-.aboutme {
+.aboutme,
+.technique {
   margin: 80px 15%;
 }
 
@@ -221,7 +222,8 @@ body {
   width: 100%;
   height: 100%;
 }
-.performImg .detail, .ifram .detail {
+.performImg .detail,
+.ifram .detail {
   width: fit-content;
   height: fit-content;
   padding: 10px 20px;
@@ -258,7 +260,7 @@ body {
   box-shadow: 0em 0.7em 2em #0002;
 }
 
-.growup .gorwText {
+.growup .gorwText, .technique .techText {
   font-size: calc(var(--normalSize) * 1.1);
   color: var(--normal);
 }
@@ -419,8 +421,9 @@ body {
     grid-template-columns: auto;
   }
   .perform,
-.growup,
-.aboutme {
-  margin: 80px 10%;
-}
+  .growup,
+  .aboutme,
+  .technique {
+    margin: 80px 10%;
+  }
 }
