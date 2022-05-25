@@ -269,6 +269,35 @@ body {
   border-radius: 10px;
 }
 
+.footer {
+  --footHeight: 300px;
+  width: 100%;
+  height: 270px;
+  background-color: var(--bgColorND);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+.footer img {
+  height: calc(var(--footHeight) * 1.1);
+  position: absolute;
+  bottom: 0;
+  left: 14%;
+}
+.footer .footText {
+  color: var(--primary);
+  font-size: calc(var(--normalSize) * 1.5);
+  z-index: 1;
+  text-align: right;
+  background-color: var(--navbar);
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  right: 14%;
+}
+
 @media only screen and (max-width: 1200px) {
   .introImg {
     display: none;
@@ -310,6 +339,13 @@ body {
   }
   .aboutme .aboutmeText {
     grid-template-columns: auto auto;
+  }
+  .footer img {
+    left: -50px;
+  }
+  .footer .footText {
+    font-size: calc(var(--normalSize) * 1.5);
+    right: 0;
   }
 }
 
