@@ -7,6 +7,7 @@ const navA = navMenu.querySelectorAll("a");
 const navbar = document.getElementsByClassName("navbar")[0];
 const upBtn = document.getElementById("UpBtn");
 let currentSection = "home";
+let isStarted = false;
 // navA.forEach((a) => {
 //   a.onclick = () => {
 //     activeBtn(a.href.split("#")[1]);
@@ -96,10 +97,13 @@ audio = new (window.AudioContext || window.webkitAudioContext)();
 osci = audio.createOscillator();
 gain = audio.createGain();
 gain.gain.value = 0.5;
-osci.start();
 function start() {
   osci.connect(gain);
   gain.connect(audio.destination);
+  if (!isStarted) {
+    osci.start();
+    isStarted = true;
+  }
 }
 function stop() {
   osci.disconnect();
