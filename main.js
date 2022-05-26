@@ -4,8 +4,9 @@ const svg = document.getElementsByClassName("svg");
 const section = doc.querySelectorAll("section");
 const navMenu = document.getElementById("navMenu");
 const navA = navMenu.querySelectorAll("a");
+const navbar = document.getElementsByClassName("navbar")[0];
+const upBtn = document.getElementById("UpBtn");
 let currentSection = "home";
-
 // navA.forEach((a) => {
 //   a.onclick = () => {
 //     activeBtn(a.href.split("#")[1]);
@@ -13,9 +14,18 @@ let currentSection = "home";
 // });
 
 window.onscroll = () => {
-  if (document.documentElement.scrollTop == 0) {
-    document.getElementsByClassName("navbar")[0].style.height = "86px";
-  } else document.getElementsByClassName("navbar")[0].style.height = "56px";
+  let val = document.documentElement.scrollTop;
+  changeFeq(val);
+  if (val == 0) {
+    navbar.style.height = "86px";
+    upBtn.style.opacity = 0;
+    upBtn.style.pointerEvents = "none";
+    stop();
+  } else {
+    navbar.style.height = "56px";
+    upBtn.style.opacity = 1;
+    upBtn.style.pointerEvents = "auto";
+  }
   let top = doc.scrollTop + 56;
   let bottom = top + doc.offsetHeight;
   let arr = [];
@@ -73,3 +83,31 @@ function swDark(e) {
     ele.style.fill = doc.style.getPropertyValue("--bl");
   }
 }
+
+function goUp() {
+  window.scrollTo(0, 0);
+  start();
+  setTimeout(() => {
+    stop();
+  }, 1000);
+}
+
+audio = new (window.AudioContext || window.webkitAudioContext)();
+osci = audio.createOscillator();
+gain = audio.createGain();
+gain.gain.value = 0.5;
+osci.start();
+function start() {
+  osci.connect(gain);
+  gain.connect(audio.destination);
+}
+function stop() {
+  osci.disconnect();
+}
+function changeFeq(val) {
+  osci.frequency.setValueAtTime(val / 10, audio.currentTime);
+}
+// function changeGain(val) {
+//   gain.gain.value = val / 100;
+//   document.body.scrollHeight;
+// }
